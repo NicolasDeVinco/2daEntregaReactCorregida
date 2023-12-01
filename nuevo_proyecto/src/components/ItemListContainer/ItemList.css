@@ -1,0 +1,21 @@
+.usuarios__container {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.usuario__card--container {
+    border: red 2px solid;
+    width: 20%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.usuario__card--img {
+    border-radius: 50%;
+}
+
+.usuario__card--button:hover {
+    cursor: pointer;
+}
