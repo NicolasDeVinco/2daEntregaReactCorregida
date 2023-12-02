@@ -1,9 +1,9 @@
     // esto estaba en itemdetailcontainer:
 
-    // const usuarioSeleccionado = usuarios.find((usuario) => usuario.id === id)
+    // 
 
     // esto dentro del return de itemdetailcontainer:
-          {/* <ItemDetail usuarioSeleccionado={usuarioSeleccionado}/> */}
+          {/*  */}
     
     
     // const [producto, setProducto] = useState({}) // para traer un documento
