@@ -16,8 +16,7 @@ export const Navbar = (props) => {
                 <NavLink className="categoria__item" to='/categoria/postulate'>POSTULATE</NavLink>
             </div>
             <div className="cartwidget__container">
-                <img src="../src/images/capitan-del-equipo.png" className="cartwidget__img" alt="imagen cart widget equipo" />
-               
+                <NavLink className="cart__widget--item" to='/equipo'><img src="../src/images/capitan-del-equipo.png" className="cartwidget__img" alt="imagen cart widget equipo" />  </NavLink>   
             </div>
              <Counter />
         </div>

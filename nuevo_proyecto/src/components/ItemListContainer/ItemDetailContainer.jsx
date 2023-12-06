@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import usuarios from '../../usuarios.json'
 
 
-export const ItemDetailContainer = () => {
+export const ItemDetailContainer = ({ addToCart }) => {
   const { id } = useParams()
   const [usuario, setUsuario] = useState([])
 
@@ -13,10 +13,11 @@ export const ItemDetailContainer = () => {
     setUsuario(usuarios.filter((usuario) => usuario.id === Number(id))[0])
   }, [id])
 
+
   return (
     <>
         <Titulos titulo="DETALLES"/>
-        <ItemDetail usuarioSeleccionado={usuario}/>
+        <ItemDetail usuarioSeleccionado={usuario} onAddToCart={addToCart}/>
     </>
     )
 }

@@ -1,0 +1,28 @@
+.equis__img {
+    width: 4%;
+    background-color: red;
+    cursor: pointer;
+}
+
+.cart__container--info {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+}
+
+.cart__info--precio {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    align-self: center;
+}
+
+.cart__info--button {
+    text-align: center;
+    align-self: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.cart__button {
+    cursor: pointer;
+}

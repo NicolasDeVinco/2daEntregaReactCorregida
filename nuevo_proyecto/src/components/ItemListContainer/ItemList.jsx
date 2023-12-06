@@ -45,7 +45,7 @@ export const ItemList = () => {
                         <img src={usuario.imagen} className="usuario__card--img" alt={usuario.nombre}/>
                         <p>Precio: ${usuario.precio}</p>
                         <p>Posición: {usuario.posicion}</p>
-                        <Link to={`/categoria/usuarios/${usuario.id}`}  className="usuario__card--button">Ver más</Link>
+                        <Link to={`/categoria/usuarios/${usuario.genero}/${usuario.id}`}  className="usuario__card--button">Ver más</Link>
                     </div>
                 ))
             }

@@ -7,8 +7,14 @@
     position:absolute;
     right: 50px;
     top: 45px;
+    display: block;
+}
+
+.counter__container--none {
+    display: none;
 }
 
 .counter__item {
     margin: 0;
+    color: white;
 }

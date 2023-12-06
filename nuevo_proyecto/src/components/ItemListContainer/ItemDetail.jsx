@@ -1,8 +1,21 @@
+import { InputCount } from './InputCount'
 import './ItemDetail.css'
+import { useState } from 'react'
 
 
 
-export const ItemDetail = ({ usuarioSeleccionado }) => {
+export const ItemDetail = ({ usuarioSeleccionado, onAddToCart  }) => {
+  
+  const [count, setCount] = useState(0)
+  
+
+  const increment = () => {
+    setCount(prev => prev + 1)
+    onAddToCart(usuarioSeleccionado, count + 1)
+    setInputType(false)
+  }
+
+  const [inputType, setInputType ] = useState(true)
 
   return (
     <div className='detail__container--general'>
@@ -29,7 +42,9 @@ export const ItemDetail = ({ usuarioSeleccionado }) => {
           <img src={`../../${usuarioSeleccionado.imagen}`} alt={usuarioSeleccionado.nombre} className="detalles__imagen" />
         </div>
       </div>
-      <button className='detalles__button'>Agregar a mi equipo</button>
+      {inputType ? <button className='detalles__button' onClick={increment} >Agregar a mi equipo</button> 
+      : <InputCount />}
+      
     </div>
   )
 }
