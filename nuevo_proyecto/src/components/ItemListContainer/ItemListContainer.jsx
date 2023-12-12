@@ -1,13 +1,11 @@
-import { Titulos } from "./Titulos"
+import { Titles } from "./Extras/Titles"
 
 
 export const ItemListContainer = () => {
 
-
     return (
         <>     
-            <Titulos titulo='BIENVENIDO'/>
-
+            <Titles title='BIENVENIDO'/>
         </>
     )
 }

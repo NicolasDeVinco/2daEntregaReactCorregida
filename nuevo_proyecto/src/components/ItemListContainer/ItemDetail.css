@@ -11,35 +11,35 @@
     grid-template-columns: 6fr 6fr;
 }
 
-.detalles__data {
+.detail__data {
     display: grid;
     grid-template-columns: 2fr 6fr;
     justify-items: start;
 }
 
-.detalles__item {
+.detail__item {
     text-decoration: underline;
 }
 
-.detalles__item--respuesta {
+.detail__item--answer {
     font-weight: bold;
 }
 
-.detalles__imagen--container {
+.detail__img--container {
     align-self: center;
 }
 
-.detalles__imagen {
+.detail__img {
     border-radius: 50%;
     width: 70%;
     border: 2px solid grey;
 }
 
-.detalles__button {
+.detail__button {
     margin: auto;
     margin-top: 30px;
 }
 
-.detalles__button:hover {
+.detail__button:hover {
     cursor: pointer;
 }

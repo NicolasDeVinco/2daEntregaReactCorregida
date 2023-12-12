@@ -2,17 +2,14 @@ import { Counter } from './Counter'
 import './Navbar.css'
 import { NavLink } from "react-router-dom"
 
-export const Navbar = (props) => {
-
-    const { handleShowUsuarios } = props
- 
+export const Navbar = () => { 
 
     return (
         <div className="navbar__container">
             <NavLink className="logo__container" to='/'>EQUIPAZO!</NavLink>
             <div className="categorias__container">
                 <NavLink className="categoria__item" to='/'>INICIO</NavLink>
-                <NavLink className="categoria__item" to='/categoria/usuarios' onClick={handleShowUsuarios}>USUARIOS</NavLink>
+                <NavLink className="categoria__item" to='/categoria/usuarios'>USUARIOS</NavLink>
                 <NavLink className="categoria__item" to='/categoria/postulate'>POSTULATE</NavLink>
             </div>
             <div className="cartwidget__container">
