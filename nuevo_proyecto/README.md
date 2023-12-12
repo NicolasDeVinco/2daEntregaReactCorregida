@@ -3,7 +3,7 @@ Proyecto de Nicolas De Vinco
 Tutor: Martin Mammani
 
 DEMO:
-Repositorio GIT:
+Repositorio GIT: https://github.com/NicolasDeVinco/EntregaFinalReact-NDV
 
 
 | IMPORTACIONES | VERSIONES |
